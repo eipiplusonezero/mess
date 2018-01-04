@@ -3,8 +3,6 @@ import requests
 from lxml import html
 
 
-
-
 magnum_site_id = os.getenv('MAGNUM_SITE_ID')
 base_url = 'http://data.magnumenergy.com'
 url = '/'.join([base_url, magnum_site_id])
