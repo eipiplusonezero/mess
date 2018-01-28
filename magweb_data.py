@@ -15,7 +15,7 @@ def mag_data():
   volts_amps = tree.xpath('//span[@id="voltsAmps"]/text()')[0]
   net_power_w = int(volts_amps.split('(')[1].split(' ')[0])
   return {'battery_charge_percent': battery_charge_percent,
-          'net_power_w': net_power,
+          'net_power_w': net_power_w,
           'date': date}
 
 
